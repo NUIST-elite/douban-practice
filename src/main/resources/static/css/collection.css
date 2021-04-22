@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.collection-container header {
+    width: 100vw;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 22px 0;
+}
+
+.collection-container header .logo {
+    margin-left: 200px;
+    width: 80px;
+    height: 32px;
+    background: url(./pic/collection-pic/douban-logo.png) no-repeat center/contain;
+}
+
+.collection-container header .audio-player {
+    width: 390px;
+    margin-left: 75px;
+    position: relative;
+}
+
+.collection-container header .audio-player .songName {
+    width: 56px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.collection-container header .audio-player .audio {
+    width: 100%;
+    height: 2px;
+    background: #E9E9E9;
+    margin-top: 4px;
+}
+
+.collection-container header .audio-player .MhzName {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #2f9842;
+    margin-top: 6px;
+}
+
+.collection-container header .audio-player .MhzName .switch {
+    width: 8px;
+    height: 15px;
+    display: inline-block;
+    background: url(./pic/collection-pic/arrow.png) no-repeat center/contain;
+    position: relative;
+    left: 6px;
+    top: 4px;
+}
+
+.collection-container header .audio-player .etc {
+    position: absolute;
+    left: 335px;
+    top: 28px;
+}
+
+.collection-container header .audio-player .etc .time {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #7e7e7e;
+}
+
+.collection-container header .audio-player .etc .time::after {
+    display: block;
+    content: '';
+    clear: both;
+    width: 12px;
+    height: 10px;
+    background: url(./pic/collection-pic/volume.png) no-repeat center/contain;
+    position: relative;
+    left: 43px;
+    bottom: 14px;
+}
+
+.collection-container header .play-icon {
+    margin-left: 50px;
+}
+
+.collection-container header .play-icon ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.collection-container header .play-icon ul li {
+    display: block;
+}
+
+.collection-container header .play-icon ul li.like {
+    width: 20px;
+    height: 19.33px;
+    background: url("./pic/collection-pic/like.png") no-repeat center/contain;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.collection-container header .play-icon ul li.delete {
+    width: 18px;
+    height: 20.88px;
+    background: url("./pic/collection-pic/delete.png") no-repeat center/contain;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.collection-container header .play-icon ul li.play {
+    width: 24px;
+    height: 17.6px;
+    background: url("./pic/collection-pic/play.png") no-repeat center/contain;
+    margin-left: 25.4px;
+    cursor: pointer;
+}
+
+.collection-container header .play-icon ul li.next {
+    width: 18px;
+    height: 20.16px;
+    background: url("./pic/collection-pic/next-song.png") no-repeat center/contain;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.collection-container header .user {
+    margin-left: 197px;
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #B2B2B2;
+}
+
+.collection-container header .user .slide {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: url("./pic/collection-pic/slide-down.png") no-repeat center/contain;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.collection-container nav {
+    display: flex;
+    align-items: center;
+    margin-left: 603px;
+    margin-top: 43px;
+}
+
+.collection-container nav .mhz {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-right: 50px;
+    color: #979797;
+    display: flex;
+}
+
+.collection-container nav .mhz .pic {
+    width: 14px;
+    height: 16.5px;
+    background: url("./pic/collection-pic/radio.png") no-repeat center/contain;
+    margin-left: 0px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.collection-container nav .col {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-right: 50px;
+    color: #2F9842;
+    display: flex;
+}
+
+.collection-container nav .col .pic {
+    width: 17px;
+    height: 17px;
+    background: url("./pic/collection-pic/cd.png") no-repeat center/contain;
+    margin-left: 0px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.collection-container nav .my {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-right: 50px;
+    color: #979797;
+    display: flex;
+}
+
+.collection-container nav .my .pic {
+    width: 16px;
+    height: 13.98px;
+    background: url("./pic/collection-pic/blank-heart.png") no-repeat center/contain;
+    margin-left: 0px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.collection-container main {
+    padding: 60px 199px;
+}
+
+.collection-container main ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+}
+
+.collection-container main ul li {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin-right: 73px;
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 50px;
+}
+
+.collection-container main ul li .cover {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.collection-container main ul li .cover img {
+    width: 150px;
+    height: 150px;
+}
+
+.collection-container main ul li .title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.collection-container main ul li .creator {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.collection-container main ul li .list {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.collection-container main ul li .list .song {
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.4);
+}

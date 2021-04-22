@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/player.css">
+    <title>Document</title>
+</head>
+<body>
+<div th:replace="share::share" style="position: absolute"></div>
+<div class="container" th:fragment="player">
+    <header>
+        <div class="logo"></div>
+        <div class="intro">
+            下载豆瓣FM APP · 我要反馈
+        </div>
+        <div class="user">
+            <span class="login">登录</span> I <span class="sign-up">注册</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="mhz">
+            <img src="css/pic/player-pic/Union.png" alt="">
+            <span class="mhz-name"> MHz</span>
+            <div class="arrows"></div>
+        </div>
+        <div class="music-player">
+            <section class="QR">
+                <div class="QR-code"></div>
+                <div class="QR-intro">下载豆瓣FM APP
+                    让好音乐继续</div>
+            </section>
+
+            <section class="main-player">
+                <div class="song-name">[[ ${song.name} ]]</div>
+                <div class="singer-name">[[ ${singer.name} ]]</div>
+
+                <div class="small-icon">
+                    <div class="time-left">00:00</div>
+                    <div class="volume"></div>
+                    <div class="lyrics"></div>
+                    <div class="download"></div>
+                    <div class="share"></div>
+                </div>
+
+                <div class="audio-play">
+                    <audio th:src="@{${song.url}}"></audio>
+                </div>
+
+                <div class="big-icon">
+                    <ul>
+                        <li class="like"></li>
+                        <li class="delete"></li>
+                        <li class="list"></li>
+                        <li class="method"></li>
+                        <li class="prev"></li>
+                        <li class="play"></li>
+                        <li class="next"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="cover">
+                <img th:src="@{${song.cover}}">
+            </section>
+        </div>
+
+
+    </main>
+
+    <nav>
+        <p class="for-login"><span>登录/注册</span> 后豆瓣FM将永久保留你的收听历史与喜好</p>
+    </nav>
+
+    <footer>
+        <div class="mhz-icon"></div>
+        <div class="mhz-radio">兆赫</div>
+        <div class="cd-icon"></div>
+        <div class="cd">歌单</div>
+    </footer>
+
+    <div class="round-arrow"></div>
+</div>
+</body>
+</html>

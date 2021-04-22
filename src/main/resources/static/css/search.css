@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fbfbfb;
+}
+
+body .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1027px;
+    position: relative;
+}
+
+body .search-container .blur {
+    width: 318px;
+    height: 318px;
+    position: absolute;
+    left: 28px;
+    top: 353px;
+    background: url(./pic/search-pic/blur.png) no-repeat center/contain;
+    z-index: -1;
+}
+
+body .search-container .blur:first-child {
+    left: 1094px;
+}
+
+body .search-container .container {
+    width: 1040px;
+    height: 831px;
+    border: 1px solid silver;
+    background: white;
+}
+
+body .search-container .container input {
+    width: 788px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #E5E5E5;
+    padding: 15px 58px;
+    margin-top: 231px;
+    margin-left: 100px;
+}
+
+body .search-container .container input:focus {
+    outline: medium;
+}
+
+body .search-container .container .search-icon {
+    width: 18px;
+    height: 18px;
+    background: url(./pic/search-pic/search.png) no-repeat center/contain;
+    position: relative;
+    bottom: 33px;
+    left: 130px;
+}
+
+body .search-container .container .cancel {
+    position: relative;
+    left: 908px;
+    bottom: 55px;
+    width: 32px;
+    height: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #777777;
+    cursor: pointer;
+}
+
+body .search-container .container ul {
+    margin-left: 140px;
+    list-style: none;
+    display: flex;
+    font-size: 0;
+}
+
+body .search-container .container ul li {
+    display: block;
+    width: 100px;
+    margin-right: 65px;
+}
+
+body .search-container .container ul li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+body .search-container .container ul li .name {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+}

@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fbfbfb;
+}
+
+body .container-userguide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1027px;
+    position: relative;
+}
+
+body .container-userguide .blur {
+    width: 318px;
+    height: 318px;
+    position: absolute;
+    left: 28px;
+    top: 353px;
+    background: url(./pic/userguide-pic/blur.png) no-repeat center/contain;
+    z-index: -1;
+}
+
+body .container-userguide .blur:first-child {
+    left: 1094px;
+}
+
+body .container-userguide .container {
+    width: 1040px;
+    height: 831px;
+    border: 1px solid silver;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .container-userguide .container .title {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 42px;
+    margin-top: 110px;
+}
+
+body .container-userguide .container .singer {
+    margin-top: 30px;
+}
+
+body .container-userguide .container .singer ul {
+    width: 760px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body .container-userguide .container .singer ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    margin-right: 65px;
+    margin-top: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+body .container-userguide .container .singer ul li .red {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url(./pic/userguide-pic/red.png) no-repeat  center / contain;
+    display: none;
+}
+
+body .container-userguide .container .singer ul li .red .chosen {
+    width: 30px;
+    height: 22px;
+    background: url(./pic/userguide-pic/chosen.png) no-repeat center / contain;
+    margin-left: 35px;
+    margin-top: 39px;
+}
+
+body .container-userguide .container .singer ul li:nth-child(5) {
+    margin-right: 0;
+}
+
+body .container-userguide .container .singer ul li:nth-child(10) {
+    margin-right: 0;
+}
+
+body .container-userguide .container .singer ul li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+body .container-userguide .container .singer ul li .name {
+    height: 17px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    white-space: nowrap;
+}
+
+body .container-userguide .container .singer ul li .is-like {
+    margin-top: 10px;
+    width: 40px;
+    height: 20px;
+    border: 1px solid #FF4874;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #FF4874;
+}
+
+body .container-userguide .container .move {
+    display: flex;
+    margin-top: 50px;
+}
+
+body .container-userguide .container .move .reload {
+    width: 57px;
+    height: 18px;
+    background: url(./pic/userguide-pic/reload.png) no-repeat center/contain;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+body .container-userguide .container .move .search {
+    width: 57px;
+    height: 18px;
+    background: url(./pic/userguide-pic/search.png) no-repeat center/contain;
+    cursor: pointer;
+}
+
+body .container-userguide .container .like {
+    margin-top: 31px;
+}
+
+body .container-userguide .container .like ul {
+    display: flex;
+    list-style: none;
+}
+
+body .container-userguide .container .like ul li {
+    display: block;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+body .container-userguide .container .like ul li .small-red {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url(./pic/userguide-pic/small-red.png) no-repeat center / contain;
+    display: none;
+    position: absolute;
+}
+
+body .container-userguide .container .like ul li .small-red .delete {
+    width: 12px;
+    height: 12px;
+    background: url(./pic/userguide-pic/delete.png) no-repeat center / contain;
+    display: none;
+    margin-left: 19px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+body .container-userguide .container .like ul li .my-like {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+body .container-userguide .container .like ul li:nth-child(5) {
+    margin-right: 0;
+}
+
+body .container-userguide .container .like .my-Mhz {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 250px;
+    height: 50px;
+    border-radius: 100px;
+    background: #3DBE54;
+    display: none;
+    align-items: center;
+}
+
+body .container-userguide .container .like .my-Mhz .play-icon {
+    width: 14px;
+    height: 23px;
+    background: url(./pic/userguide-pic/play-icon.png) no-repeat center / contain;
+    margin-left: 60px;
+}
+
+body .container-userguide .container .like .my-Mhz .text {
+    width: 96px;
+    height: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: white;
+    margin-left: 20.75px;
+}
+
+body .container-userguide .container .skip {
+    margin-top: 60px;
+    width: 114px;
+    height: 17px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #aeaeae;
+}
+
+body .container-userguide .container .skip img {
+    width: 7.31px;
+    height: 13px;
+    margin-left: 7.84px;
+    vertical-align: middle;
+}
+
+body .container-userguide .container .login {
+    position: absolute;
+    top: 127px;
+    left: 1120px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #2F9842;
+}
+
+body .container-userguide .container .login .arrow {
+    background: url(./pic/userguide-pic/Vector-green.png) no-repeat center/contain;
+    width: 7.31px;
+    height: 13px;
+    margin-left: 7.84px;
+    display: inline-block;
+}
+

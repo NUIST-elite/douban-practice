@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #f8f8f8;
+    height: 100vh;
+}
+
+.container header {
+    width: 100vw;
+    height: 92px;
+    display: flex;
+    align-items: center;
+}
+
+.container header .logo {
+    margin-left: 200px;
+    width: 80px;
+    height: 32px;
+    background: url(./pic/player-pic/douban-logo.png) no-repeat center/contain;
+}
+
+.container header .intro {
+    margin-left: 40px;
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: #B2B2B2;
+}
+
+.container header .user {
+    margin-left: 706px;
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: #B2B2B2;
+}
+
+.container main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 0 243px;
+    margin-top: 114px;
+}
+
+.container main .mhz {
+    margin-left: 122px;
+}
+
+.container main .mhz img {
+    width: 9px;
+    height: 10px;
+}
+
+.container main .mhz .mhz-name {
+    font-family: PingFang SC;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #2F9842;
+}
+
+.container main .mhz .arrows {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    background: url("./pic/player-pic/arrow.png") no-repeat center/contain;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.container main .music-player {
+    margin-top: 24px;
+    display: flex;
+}
+
+.container main .music-player .QR {
+    margin-top: 32px;
+}
+
+.container main .music-player .QR .QR-code {
+    width: 78px;
+    height: 79px;
+    background: url(./pic/player-pic/QR-code.png) no-repeat center/cover;
+}
+
+.container main .music-player .QR .QR-intro {
+    width: 77px;
+    height: 28px;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 14px;
+    text-align: center;
+    color: #979797;
+    margin-top: 5px;
+}
+
+.container main .music-player .main-player {
+    margin-top: 36px;
+    margin-left: 65px;
+}
+
+.container main .music-player .main-player .song-name {
+    width: 80px;
+    height: 28px;
+    font-family: PingFang SC;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
+.container main .music-player .main-player .singer-name {
+    margin-top: 10px;
+    width: 36px;
+    height: 17px;
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: #7e7e7e;
+    white-space: nowrap;
+}
+
+.container main .music-player .main-player .small-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.container main .music-player .main-player .small-icon .time-left {
+    width: 33px;
+    height: 14px;
+    font-family: PingFang SC;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    color: #7e7e7e;
+}
+
+.container main .music-player .main-player .small-icon .volume {
+    width: 12px;
+    height: 10px;
+    background: url("./pic/player-pic/volume.png") no-repeat center/contain;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.container main .music-player .main-player .small-icon .lyrics {
+    width: 15px;
+    height: 13px;
+    background: url("./pic/player-pic/lyrics.png") no-repeat center/contain;
+    margin-left: 332px;
+    cursor: pointer;
+}
+
+.container main .music-player .main-player .small-icon .download {
+    width: 18px;
+    height: 15px;
+    background: url("./pic/player-pic/download.png") no-repeat center/contain;
+    margin-left: 33px;
+    cursor: pointer;
+}
+
+.container main .music-player .main-player .small-icon .share {
+    width: 12px;
+    height: 14px;
+    background: url("./pic/player-pic/share.png") no-repeat center/contain;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.container main .music-player .main-player .audio-play {
+    width: 500px;
+    height: 2px;
+    background: #E9E9E9;
+    margin-top: 4px;
+}
+
+.container main .music-player .main-player .big-icon {
+    margin-top: 60px;
+}
+
+.container main .music-player .main-player .big-icon ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.container main .music-player .main-player .big-icon ul li {
+    display: block;
+}
+
+.container main .music-player .main-player .big-icon ul li.like {
+    width: 30px;
+    height: 29px;
+    background: url("./pic/player-pic/like.png") no-repeat center/contain;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.container main .music-player .main-player .big-icon ul li.delete {
+    width: 25px;
+    height: 29px;
+    background: url("./pic/player-pic/delete.png") no-repeat center/contain;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.container main .music-player .main-player .big-icon ul li.list {
+    width: 14px;
+    height: 10px;
+    background: url("./pic/player-pic/list.png") no-repeat center/contain;
+    margin-left: 135px;
+    cursor: pointer;
+}
+
+.container main .music-player .main-player .big-icon ul li.method {
+    width: 14px;
+    height: 12px;
+    background: url("./pic/player-pic/play-method.png") no-repeat center/contain;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.container main .music-player .main-player .big-icon ul li.prev {
+    width: 25px;
+    height: 28px;
+    background: url("./pic/player-pic/prev-song.png") no-repeat center/contain;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.container main .music-player .main-player .big-icon ul li.play {
+    width: 30px;
+    height: 22px;
+    background: url("./pic/player-pic/play.png") no-repeat center/contain;
+    margin-left: 59.5px;
+    cursor: pointer;
+}
+
+.container main .music-player .main-player .big-icon ul li.next {
+    width: 25px;
+    height: 28px;
+    background: url("./pic/player-pic/next-song.png") no-repeat center/contain;
+    margin-left: 60.5px;
+    cursor: pointer;
+}
+
+.container main .music-player .cover img{
+    width: 257px;
+    height: 257px;
+    margin-left: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.container nav {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    left: 384px;
+    top: 517px;
+    padding: 0 10px;
+    background: #EDEDED;
+}
+
+.container nav .for-login {
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.container nav .for-login span {
+    color: #2F9842;
+}
+
+.container footer {
+    width: 100vw;
+    height: 67px;
+    margin-top: 184px;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.container footer .mhz-icon {
+    width: 24px;
+    height: 24px;
+    background: url("./pic/player-pic/mhz-radio.png") no-repeat center/contain;
+    margin-left: 646px;
+    cursor: pointer;
+}
+
+.container footer .mhz-radio {
+    cursor: pointer;
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    margin-left: 2px;
+    color: #2f9842;
+}
+
+.container footer .cd-icon {
+    width: 17px;
+    height: 17px;
+    background: url("./pic/player-pic/cd.png") no-repeat center/contain;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.container footer .cd {
+    cursor: pointer;
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: #979797;
+    margin-left: 7px;
+}
+
+.container .round-arrow {
+    width: 20px;
+    height: 20px;
+    background: url("./pic/player-pic/round-arrow.png") no-repeat center/contain;
+    margin-left: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 1220px;
+    top: 612px;
+}

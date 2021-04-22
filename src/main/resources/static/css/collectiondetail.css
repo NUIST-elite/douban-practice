@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.collectiondetail-container header {
+    width: 100vw;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 22px 0;
+}
+
+.collectiondetail-container header .logo {
+    margin-left: 200px;
+    width: 80px;
+    height: 32px;
+    background: url(./pic/collectiondetail-pic/douban-logo.png) no-repeat center/contain;
+}
+
+.collectiondetail-container header .audio-player {
+    width: 390px;
+    margin-left: 75px;
+    position: relative;
+}
+
+.collectiondetail-container header .audio-player .songName {
+    width: 56px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.collectiondetail-container header .audio-player .audio {
+    width: 100%;
+    height: 2px;
+    background: #E9E9E9;
+    margin-top: 4px;
+}
+
+.collectiondetail-container header .audio-player .MhzName {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #2f9842;
+    margin-top: 6px;
+}
+
+.collectiondetail-container header .audio-player .MhzName .switch {
+    width: 8px;
+    height: 15px;
+    display: inline-block;
+    background: url(./pic/collectiondetail-pic/arrow.png) no-repeat center/contain;
+    position: relative;
+    left: 6px;
+    top: 4px;
+}
+
+.collectiondetail-container header .audio-player .etc {
+    position: absolute;
+    left: 335px;
+    top: 28px;
+}
+
+.collectiondetail-container header .audio-player .etc .time {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #7e7e7e;
+}
+
+.collectiondetail-container header .audio-player .etc .time::after {
+    display: block;
+    content: '';
+    clear: both;
+    width: 12px;
+    height: 10px;
+    background: url(./pic/collectiondetail-pic/volume.png) no-repeat center/contain;
+    position: relative;
+    left: 43px;
+    bottom: 14px;
+}
+
+.collectiondetail-container header .play-icon {
+    margin-left: 50px;
+}
+
+.collectiondetail-container header .play-icon ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.collectiondetail-container header .play-icon ul li {
+    display: block;
+}
+
+.collectiondetail-container header .play-icon ul li.like {
+    width: 20px;
+    height: 19.33px;
+    background: url("./pic/collectiondetail-pic/like.png") no-repeat center/contain;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.collectiondetail-container header .play-icon ul li.delete {
+    width: 18px;
+    height: 20.88px;
+    background: url("./pic/collectiondetail-pic/delete.png") no-repeat center/contain;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.collectiondetail-container header .play-icon ul li.play {
+    width: 24px;
+    height: 17.6px;
+    background: url("./pic/collectiondetail-pic/play.png") no-repeat center/contain;
+    margin-left: 25.4px;
+    cursor: pointer;
+}
+
+.collectiondetail-container header .play-icon ul li.next {
+    width: 18px;
+    height: 20.16px;
+    background: url("./pic/collectiondetail-pic/next-song.png") no-repeat center/contain;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.collectiondetail-container header .user {
+    margin-left: 197px;
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #B2B2B2;
+}
+
+.collectiondetail-container header .user .slide {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: url("./pic/collectiondetail-pic/slide-down.png") no-repeat center/contain;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.collectiondetail-container main {
+    margin-top: 79px;
+    margin-left: 327px;
+    width: 786px;
+    height: 788px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+}
+
+.collectiondetail-container main .header {
+    position: relative;
+    margin-left: 100px;
+    margin-top: 68px;
+}
+
+.collectiondetail-container main .header .main .avatar {
+    position: relative;
+    width: 180px;
+    height: 180px;
+}
+
+.collectiondetail-container main .header .main .avatar .button {
+    position: absolute;
+    left: 130px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    background: #7AD940;
+    opacity: 0.56;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.collectiondetail-container main .header .main .avatar .head {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+}
+
+.collectiondetail-container main .header .main .avatar .pause {
+    opacity: 1;
+    position: absolute;
+    left: 142px;
+    top: 132px;
+    width: 17.6px;
+    height: 24px;
+    z-index: 2;
+}
+
+.collectiondetail-container main .header .main .name {
+    position: absolute;
+    left: 220px;
+    top: -10px;
+    width: 276px;
+    height: 42px;
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.collectiondetail-container main .header .main .intro {
+    position: absolute;
+    width: 188px;
+    height: 17px;
+    left: 220px;
+    top: 37px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #ADADAD;
+    white-space: nowrap;
+}
+
+.collectiondetail-container main .header .main .share {
+    position: absolute;
+    right: 79px;
+    top: 94px;
+    width: 12px;
+    height: 14px;
+    background: url(./pic/collectiondetail-pic/share.png) no-repeat center/contain;
+}
+
+.collectiondetail-container main .header .select {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.collectiondetail-container main .header .select .topic1 {
+    flex: none;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.collectiondetail-container main .header .select .topic2 {
+    flex: none;
+    margin-left: 30px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.4;
+}
+
+.collectiondetail-container main .header .select .line {
+    margin-top: 10px;
+    width: 586px;
+    height: 1px;
+    background: #EAEAEA;
+}
+
+.collectiondetail-container main .one {
+    margin-left: 100px;
+}
+
+.collectiondetail-container main .one ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.collectiondetail-container main .one ul li {
+    display: block;
+    margin-bottom: 18px;
+    display: flex;
+}
+
+.collectiondetail-container main .one ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.collectiondetail-container main .one ul li .name {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.collectiondetail-container main .two {
+    display: none;
+}
+
+.collectiondetail-container main .two ul {
+    margin-top: 30px;
+    margin-left: 100px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.collectiondetail-container main .two ul li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.collectiondetail-container main .two ul li img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.collectiondetail-container main .two ul li .info .title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 2px;
+}
+
+.collectiondetail-container main .two ul li .info .shoucang {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    opacity: 30%;
+    margin-bottom: 14px;
+}
+
+.collectiondetail-container main .two ul li .info .time {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    opacity: 30%;
+}

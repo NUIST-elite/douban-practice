@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/collectiondetail.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <title>Collectiondetail</title>
+</head>
+<body>
+<div th:replace="share::share" style="position: absolute"></div>
+<div class="collectiondetail-container" th:fragment="collectiondetail">
+    <header>
+        <div class="logo"></div>
+        <div class="audio-player">
+            <div class="songName">我不完美</div>
+
+            <div class="audio">
+                <audio src=""></audio>
+            </div>
+
+            <div class="MhzName">李玖哲 Mhz<span class="switch"></span></div>
+
+            <div class="etc">
+                <span class="time">-03:34</span>
+            </div>
+        </div>
+
+        <div class="play-icon">
+            <ul>
+                <li class="like"></li>
+                <li class="delete"></li>
+                <li class="play"></li>
+                <li class="next"></li>
+            </ul>
+        </div>
+
+        <div class="user">
+            <span class="login">登录</span> I <span class="sign-up">注册</span>
+            <span class="slide"></span>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="header">
+            <div class="main">
+                <div class="avatar">
+                    <div class="button"></div>
+                    <img class="head" th:src="@{${subject.cover}}" alt="">
+                    <img class="pause" src="./pic/collectiondetail-pic/pause.png">
+                </div>
+                <div class="name">[[${subject.name}]]</div>
+                <div class="intro">[[${singer.name}]]创建50首歌曲 2015-09-10</div>
+                <div class="share"></div>
+            </div>
+
+            <div class="select">
+                <div class="topic1">歌曲列表(50)</div>
+                <div class="topic2">[[${singer.name}]]的其他歌曲(3)</div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <section class="one">
+            <ul>
+                <li th:each="song,it: ${songs}">
+                    <img th:src="@{${song.cover}}" alt="" class="pic">
+                    <div class="name">[[${it.count}]] [[${song.name}]]</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="two">
+            <ul>
+                <li th:each="subject: ${otherSubjects}">
+                    <img class="bighead" th:src="@{${subject.cover}}">
+                    <div class="info">
+                        <div class="title">[[${subject.name}]]</div>
+                        <div class="shoucang">30首歌，42收藏</div>
+                        <div class="time">2019-10-20更新</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</div>
+
+<script src="js/collectiondetail.js"></script>
+</body>
+</html>

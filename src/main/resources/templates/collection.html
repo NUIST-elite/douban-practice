@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/collection.css">
+    <title>Collection</title>
+</head>
+<body>
+<div class="collection-container" th:fragment="collection">
+    <header>
+        <div class="logo"></div>
+        <div class="audio-player">
+            <div class="songName">我不完美</div>
+
+            <div class="audio">
+                <audio src=""></audio>
+            </div>
+
+            <div class="MhzName">李玖哲 Mhz<span class="switch"></span></div>
+
+            <div class="etc">
+                <span class="time">-03:34</span>
+            </div>
+        </div>
+
+        <div class="play-icon">
+            <ul>
+                <li class="like"></li>
+                <li class="delete"></li>
+                <li class="play"></li>
+                <li class="next"></li>
+            </ul>
+        </div>
+
+        <div class="user">
+            <span class="login">登录</span> I <span class="sign-up">注册</span>
+            <span class="slide"></span>
+        </div>
+    </header>
+
+    <nav>
+        <div class="mhz">
+            <div class="pic"></div>兆赫
+        </div>
+        <div class="col">
+            <div class="pic"></div>歌单
+        </div>
+        <div class="my">
+            <div class="pic"></div>我的
+        </div>
+    </nav>
+
+    <main>
+        <ul>
+            <li th:each="model: ${models}">
+                <a th:href="@{'/collectiondetail?subjectId=' + ${model.id}}">
+                <div class="cover">
+                    <img th:src="@{${model.cover}}" alt="">
+                </div>
+                <div class="title">[[ ${model.name} ]]</div>
+                <div class="creator">[[ ${model.singer} ]] 创建</div>
+                <div class="list">
+                    <div class="song" th:each="song: ${model.songs}">[[ ${song.name} ]]</div>
+                </div>
+                </a>
+            </li>
+        </ul>
+    </main>
+</div>
+</body>
+</html>

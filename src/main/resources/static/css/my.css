@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.my-container header {
+    width: 100vw;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 22px 0;
+}
+
+.my-container header .logo {
+    margin-left: 200px;
+    width: 80px;
+    height: 32px;
+    background: url(./pic/my-pic/douban-logo.png) no-repeat center/contain;
+}
+
+.my-container header .audio-player {
+    width: 390px;
+    margin-left: 75px;
+    position: relative;
+}
+
+.my-container header .audio-player .songName {
+    width: 56px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.my-container header .audio-player .audio {
+    width: 100%;
+    height: 2px;
+    background: #E9E9E9;
+    margin-top: 4px;
+}
+
+.my-container header .audio-player .MhzName {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #2f9842;
+    margin-top: 6px;
+}
+
+.my-container header .audio-player .MhzName .switch {
+    width: 8px;
+    height: 15px;
+    display: inline-block;
+    background: url(./pic/my-pic/arrow.png) no-repeat center/contain;
+    position: relative;
+    left: 6px;
+    top: 4px;
+}
+
+.my-container header .audio-player .etc {
+    position: absolute;
+    left: 335px;
+    top: 28px;
+}
+
+.my-container header .audio-player .etc .time {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #7e7e7e;
+}
+
+.my-container header .audio-player .etc .time::after {
+    display: block;
+    content: '';
+    clear: both;
+    width: 12px;
+    height: 10px;
+    background: url(./pic/my-pic/volume.png) no-repeat center/contain;
+    position: relative;
+    left: 43px;
+    bottom: 14px;
+}
+
+.my-container header .play-icon {
+    margin-left: 50px;
+}
+
+.my-container header .play-icon ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.my-container header .play-icon ul li {
+    display: block;
+}
+
+.my-container header .play-icon ul li.like {
+    width: 20px;
+    height: 19.33px;
+    background: url("./pic/my-pic/like.png") no-repeat center/contain;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.my-container header .play-icon ul li.delete {
+    width: 18px;
+    height: 20.88px;
+    background: url("./pic/my-pic/delete.png") no-repeat center/contain;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.my-container header .play-icon ul li.play {
+    width: 24px;
+    height: 17.6px;
+    background: url("./pic/my-pic/play.png") no-repeat center/contain;
+    margin-left: 25.4px;
+    cursor: pointer;
+}
+
+.my-container header .play-icon ul li.next {
+    width: 18px;
+    height: 20.16px;
+    background: url("./pic/my-pic/next-song.png") no-repeat center/contain;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.my-container header .user {
+    margin-left: 197px;
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #B2B2B2;
+}
+
+.my-container header .user .slide {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: url("./pic/my-pic/slide-down.png") no-repeat center/contain;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.my-container nav {
+    display: flex;
+    align-items: center;
+    margin-left: 603px;
+    margin-top: 43px;
+}
+
+.my-container nav .mhz {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-right: 50px;
+    color: #979797;
+    display: flex;
+}
+
+.my-container nav .mhz .pic {
+    width: 14px;
+    height: 16.5px;
+    background: url("./pic/my-pic/radio.png") no-repeat center/contain;
+    margin-left: 0px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.my-container nav .col {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-right: 50px;
+    color: #979797;
+    display: flex;
+}
+
+.my-container nav .col .pic {
+    width: 17px;
+    height: 17px;
+    background: url("./pic/my-pic/cd.png") no-repeat center/contain;
+    margin-left: 0px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.my-container nav .my {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-right: 50px;
+    color: #2F9842;
+    display: flex;
+}
+
+.my-container nav .my .pic {
+    width: 16px;
+    height: 13.98px;
+    background: url("./pic/my-pic/green-heart.png") no-repeat center/contain;
+    margin-left: 0px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.my-container main {
+    margin-top: 40px;
+    padding: 0 370px;
+}
+
+.my-container main .title {
+    margin-left: 326px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #2f9842;
+}
+
+.my-container main .num {
+    margin-top: 49px;
+    display: flex;
+    align-items: center;
+}
+
+.my-container main .num .icon {
+    width: 42px;
+    height: 42px;
+    background: url("./pic/my-pic/play-red.png") no-repeat center/contain;
+    margin-left: 0;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.my-container main .num .font {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #9c9c9c;
+}
+
+.my-container main ul {
+    list-style: none;
+}
+
+.my-container main ul li {
+    display: flex;
+}

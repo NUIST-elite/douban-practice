@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.mhzdetail-container header {
+    width: 100vw;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 22px 0;
+}
+
+.mhzdetail-container header .logo {
+    margin-left: 200px;
+    width: 80px;
+    height: 32px;
+    background: url(./pic/mhzdetail-pic/douban-logo.png) no-repeat center/contain;
+}
+
+.mhzdetail-container header .audio-player {
+    width: 390px;
+    margin-left: 75px;
+    position: relative;
+}
+
+.mhzdetail-container header .audio-player .songName {
+    width: 56px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.mhzdetail-container header .audio-player .audio {
+    width: 100%;
+    height: 2px;
+    background: #E9E9E9;
+    margin-top: 4px;
+}
+
+.mhzdetail-container header .audio-player .MhzName {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #2f9842;
+    margin-top: 6px;
+}
+
+.mhzdetail-container header .audio-player .MhzName .switch {
+    width: 8px;
+    height: 15px;
+    display: inline-block;
+    background: url(./pic/mhzdetail-pic/arrow.png) no-repeat center/contain;
+    position: relative;
+    left: 6px;
+    top: 4px;
+}
+
+.mhzdetail-container header .audio-player .etc {
+    position: absolute;
+    left: 335px;
+    top: 28px;
+}
+
+.mhzdetail-container header .audio-player .etc .time {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #7e7e7e;
+}
+
+.mhzdetail-container header .audio-player .etc .time::after {
+    display: block;
+    content: '';
+    clear: both;
+    width: 12px;
+    height: 10px;
+    background: url(./pic/mhzdetail-pic/volume.png) no-repeat center/contain;
+    position: relative;
+    left: 43px;
+    bottom: 14px;
+}
+
+.mhzdetail-container header .play-icon {
+    margin-left: 50px;
+}
+
+.mhzdetail-container header .play-icon ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.mhzdetail-container header .play-icon ul li {
+    display: block;
+}
+
+.mhzdetail-container header .play-icon ul li.like {
+    width: 20px;
+    height: 19.33px;
+    background: url("./pic/mhzdetail-pic/like.png") no-repeat center/contain;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.mhzdetail-container header .play-icon ul li.delete {
+    width: 18px;
+    height: 20.88px;
+    background: url("./pic/mhzdetail-pic/delete.png") no-repeat center/contain;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.mhzdetail-container header .play-icon ul li.play {
+    width: 24px;
+    height: 17.6px;
+    background: url("./pic/mhzdetail-pic/play.png") no-repeat center/contain;
+    margin-left: 25.4px;
+    cursor: pointer;
+}
+
+.mhzdetail-container header .play-icon ul li.next {
+    width: 18px;
+    height: 20.16px;
+    background: url("./pic/mhzdetail-pic/next-song.png") no-repeat center/contain;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.mhzdetail-container header .user {
+    margin-left: 197px;
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #B2B2B2;
+}
+
+.mhzdetail-container header .user .slide {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: url("./pic/mhzdetail-pic/slide-down.png") no-repeat center/contain;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.mhzdetail-container main {
+    width: 786px;
+    height: 1299px;
+    border: 1px solid #E4E4E4;
+    margin: 79px 357px;
+}
+
+.mhzdetail-container main .avatar {
+    width: 200px;
+    height: 312px;
+    margin-top: 50px;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mhzdetail-container main .avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.mhzdetail-container main .avatar .name {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.mhzdetail-container main .avatar .like {
+    margin-top: 20px;
+    width: 76px;
+    height: 20px;
+    border: 1px solid #D7D7D7;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #c5c5c5;
+    text-align: center;
+}
+
+.mhzdetail-container main .line {
+    width: 586px;
+    height: 1px;
+    margin-top: 40px;
+    margin-left: 107px;
+    background: #EAEAEA;
+}
+
+.mhzdetail-container main .list {
+    margin-top: 40px;
+    margin-left: 107px;
+}
+
+.mhzdetail-container main .list .play-all {
+    display: flex;
+    height: 17px;
+}
+
+.mhzdetail-container main .list .play-all .playicon {
+    width: 14px;
+    height: 17px;
+    background: url("./pic/mhzdetail-pic/grey-play.png") no-repeat center/contain;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.mhzdetail-container main .list .play-all .intro {
+    width: 72px;
+    height: 17px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #2F9842;
+}
+
+.mhzdetail-container main .list ul {
+    margin-top: 19px;
+    list-style: none;
+}
+
+.mhzdetail-container main .list ul li {
+    margin-top: 18px;
+    display: flex;
+}
+
+.mhzdetail-container main .list ul li img {
+    width: 20px;
+    height: 20px;
+}
+
+.mhzdetail-container main .list ul li .name {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.mhzdetail-container main .list ul li:first-child {
+    margin-top: 0;
+}
+
+.mhzdetail-container main .list .see-all {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #AFAFAF;
+}
+
+.mhzdetail-container main .sim-singer {
+    margin-top: 40px;
+    margin-left: 107px;
+}
+
+.mhzdetail-container main .sim-singer .play-this {
+    height: 17px;
+    display: flex;
+}
+
+.mhzdetail-container main .sim-singer .play-this .playicon {
+    width: 14px;
+    height: 17px;
+    background: url("./pic/mhzdetail-pic/grey-play.png") no-repeat center/contain;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.mhzdetail-container main .sim-singer .play-this .intro {
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #2f9842;
+}
+
+.mhzdetail-container main .sim-singer .info {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #AFAFAF;
+}
+
+.mhzdetail-container main .sim-singer ul {
+    margin-top: 36px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 571px;
+    font-size: 0;
+}
+
+.mhzdetail-container main .sim-singer ul li {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 57px;
+    margin-top: 40px;
+}
+
+.mhzdetail-container main .sim-singer ul li:nth-child(4) {
+    margin-right: 0;
+}
+
+.mhzdetail-container main .sim-singer ul li:nth-child(8) {
+    margin-right: 0;
+}
+
+.mhzdetail-container main .sim-singer ul li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.mhzdetail-container main .sim-singer ul li .name {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}

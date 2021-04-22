@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sign.css">
+    <title>Sign</title>
+</head>
+<body>
+<div class="sign-container">
+    <div class="blur"></div>
+    <div class="blur"></div>
+    <div class="container">
+        <div class="return">
+            <div class="arrow"></div>
+            <div class="font">返回</div>
+        </div>
+        <div class="title login">
+            密码登录
+        </div>
+        <div class="title sign">
+            注册
+        </div>
+        <form action="/register" method="post" name="user">
+            <input type="text" name="name" placeholder="请输入用户名" autocomplete="off" required>
+            <input type="text" name="mobile" placeholder="请输入手机号" autocomplete="off" required maxlength="14">
+            <input type="password" name="password" placeholder="请输入密码 " autocomplete="off" required maxlength="32">
+            <input type="password" name="conPassword" placeholder="请确认密码" autocomplete="off" required maxlength="32">
+            <input class="submit" type="submit" value="注册豆瓣">
+        </form>
+    </div>
+</div>
+<script>
+    const dom = document.querySelector(".login")
+    dom.addEventListener('click', function () {
+        window.location.href = "/"
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/Mhz.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="player" th:replace="player::player"></div>
+    <div class="Mhz" th:replace="explore::Mhz"></div>
+    <footer th:replace="layout::general-footer"></footer>
+</body>
+
+</html>

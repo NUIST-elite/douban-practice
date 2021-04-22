@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mhzdetail.css">
+    <title>Document</title>
+</head>
+<body>
+<div th:replace="share::share" style="position: absolute"></div>
+<div class="mhzdetail-container" th:fragment="mhzdetail">
+    <header>
+        <div class="logo"></div>
+        <div class="audio-player">
+            <div class="songName">我不完美</div>
+
+            <div class="audio">
+                <audio src=""></audio>
+            </div>
+
+            <div class="MhzName">李玖哲 Mhz<span class="switch"></span></div>
+
+            <div class="etc">
+                <span class="time">-03:34</span>
+            </div>
+        </div>
+
+        <div class="play-icon">
+            <ul>
+                <li class="like"></li>
+                <li class="delete"></li>
+                <li class="play"></li>
+                <li class="next"></li>
+            </ul>
+        </div>
+
+        <div class="user">
+            <span class="login">登录</span> I <span class="sign-up">注册</span>
+            <span class="slide"></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="avatar">
+            <img th:src="@{${singer.avatar}}" alt="">
+            <div class="name">[[${singer.name}]]</div>
+            <div class="like">喜欢 1344</div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="list">
+            <div class="play-all">
+                <div class="playicon"></div>
+                <div class="intro">全部精选歌曲</div>
+            </div>
+            <ul>
+                <li th:each="song: ${songs}">
+                    <div class="cover">
+                        <img th:src="@{${song.cover}}" alt="">
+                    </div>
+                    <div class="name">[[${song.name}]]</div>
+                </li>
+            </ul>
+            <div class="see-all">查看全部精选歌曲</div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="sim-singer">
+            <div class="play-this">
+                <div class="playicon"></div>
+                <div class="intro">[[${subject.name}]]</div>
+            </div>
+            <div class="info">该兆赫可能包含以下相似艺术家的歌曲</div>
+            <ul>
+                <li th:each="sim: ${simSingers}">
+                    <img th:src="@{${sim.avatar}}" alt="">
+                    <div class="name">[[${sim.name}]]</div>
+                </li>
+            </ul>
+        </div>
+    </main>
+</div>
+</body>
+</html>

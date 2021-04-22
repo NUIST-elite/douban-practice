@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/userguide.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <title>选择你喜欢的音乐家</title>
+</head>
+<body>
+<div class="container-userguide" th:fragment="userguide">
+    <div class="blur"></div>
+    <div class="blur"></div>
+    <div class="container">
+        <div class="title">挑选你喜欢的艺术家，开启私人音乐之旅</div>
+        <div class="singer">
+            <ul>
+                <li class="ten-singer" th:each="singer: ${singers}">
+                    <div class="red">
+                        <div class="chosen"></div>
+                    </div>
+                    <img th:src="@{${singer.avatar}}" alt="">
+                    <div class="name">[[${singer.name}]]</div>
+                    <div class="is-like">喜欢</div>
+                </li>
+            </ul>
+        </div>
+        <div class="move">
+            <div class="reload"></div>
+            <div class="search"></div>
+        </div>
+        <div class="like">
+            <ul>
+                <li class="my-like-singers">
+                    <div class="small-red">
+                        <div class="delete"></div>
+                    </div>
+                    <img class="my-like" src="./css/pic/userguide-pic/general.png" alt="">
+                </li>
+
+                <li class="my-like-singers">
+                    <div class="small-red">
+                        <div class="delete"></div>
+                    </div>
+                    <img class="my-like" src="./css/pic/userguide-pic/general.png" alt="">
+                </li>
+
+                <li class="my-like-singers">
+                    <div class="small-red">
+                        <div class="delete"></div>
+                    </div>
+                    <img class="my-like" src="./css/pic/userguide-pic/general.png" alt="">
+                </li>
+
+                <li class="my-like-singers">
+                    <div class="small-red">
+                        <div class="delete"></div>
+                    </div>
+                    <img class="my-like" src="./css/pic/userguide-pic/general.png" alt="">
+                </li>
+
+                <li class="my-like-singers">
+                    <div class="small-red">
+                        <div class="delete"></div>
+                    </div>
+                    <img class="my-like" src="./css/pic/userguide-pic/general.png" alt="">
+                </li>
+            </ul>
+
+            <div class="my-Mhz">
+                <div class="play-icon"></div>
+                <div class="text">我的私人兆赫</div>
+            </div>
+        </div>
+        <div class="skip">
+            跳过，直接去听歌<img src="./css/pic/userguide-pic/Vector.png" alt="">
+        </div>
+
+        <div class="login">
+            已有账号登陆
+            <div class="arrow"></div>
+        </div>
+    </div>
+</div>
+
+<script src="js/userguide.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

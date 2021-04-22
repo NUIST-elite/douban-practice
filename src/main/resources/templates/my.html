@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>my</title>
+</head>
+<body>
+<div class="my-container" th:fragment="my">
+    <header>
+        <div class="logo"></div>
+        <div class="audio-player">
+            <div class="songName">我不完美</div>
+
+            <div class="audio">
+                <audio src=""></audio>
+            </div>
+
+            <div class="MhzName">李玖哲 Mhz<span class="switch"></span></div>
+
+            <div class="etc">
+                <span class="time">-03:34</span>
+            </div>
+        </div>
+
+        <div class="play-icon">
+            <ul>
+                <li class="like"></li>
+                <li class="delete"></li>
+                <li class="play"></li>
+                <li class="next"></li>
+            </ul>
+        </div>
+
+        <div class="user">
+            <span class="login">登录</span> I <span class="sign-up">注册</span>
+            <span class="slide"></span>
+        </div>
+    </header>
+
+    <nav>
+        <div class="mhz">
+            <div class="pic"></div>兆赫
+        </div>
+        <div class="col">
+            <div class="pic"></div>歌单
+        </div>
+        <div class="my">
+            <div class="pic"></div>我的
+        </div>
+    </nav>
+
+    <main>
+        <div class="title">我的红心</div>
+        <div class="num">
+            <div class="icon"></div>
+            <div class="font">首红心歌曲</div>
+        </div>
+        <div class="line"></div>
+        <ul>
+            <li>
+
+            </li>
+        </ul>
+    </main>
+
+    <footer th:replace="layout::general-footer"></footer>
+</div>
+</body>
+</html>

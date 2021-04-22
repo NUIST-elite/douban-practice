@@ -1,0 +1,28 @@
+.general-footer {
+    width: 100vw;
+    height: 137px;
+    margin-top: 80px;
+}
+
+.general-footer .footer-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #a3a3a3;
+    text-align: center;
+}
+
+.general-footer .footer-title .front-icon {
+    margin-right: 5px;
+}
+
+.general-footer .footer-content {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #262626;
+    text-align: center;
+    margin-top: 20px;
+}
